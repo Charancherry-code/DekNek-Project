@@ -24,6 +24,14 @@ app.get("/", (req, res) => {
   res.json({ message: "User Dashboard API is running" });
 });
 
+app.get("/health", (req, res) => {
+  res.status(200).json({ 
+    status: "ok", 
+    message: "Server is healthy",
+    timestamp: new Date().toISOString()
+  });
+});
+
 app.use("/auth", authRoutes);
 app.use("/tasks", taskRoutes);
 
