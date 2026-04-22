@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  --background: #020617;
+  --foreground: #e2e8f0;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(14, 116, 144, 0.28),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(30, 64, 175, 0.26),
+      transparent 32%
+    ),
+    linear-gradient(180deg, #020617 0%, #0b1120 52%, #020617 100%);
+  color: var(--foreground);
+  font-family: "Poppins", sans-serif;
+}
+
+input,
+textarea {
+  outline: none;
+}
