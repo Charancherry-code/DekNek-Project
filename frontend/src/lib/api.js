@@ -2,7 +2,7 @@ import axios from "axios";
 import { getToken } from "./auth";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://deknek.production.up.railway.app",
+  baseURL: import.meta.env.VITE_API_URL || "https://deknek-production-44d4.up.railway.app",
 });
 
 api.interceptors.request.use((config) => {
